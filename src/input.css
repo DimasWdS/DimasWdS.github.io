@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hamburger nav */
+.menu {
+  @apply w-[18px] h-[2px] block bg-birumuda;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.menu-down {
+  display: inherit;
+}
+
+/* header portofolio */
+.header-fortofolio {
+  @apply fixed bg-slate-50 bg-opacity-50 shadow-lg;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.efek-blur {
+  @apply bg-slate-50 bg-opacity-50;
+  backdrop-filter: blur(5px);
+}
+
+.header-active {
+  @apply scale-100;
+}
+
+/* card model */
+.card {
+  @apply bg-slate-200 shadow-lg;
+}
+
+.index {
+  z-index: 9999;
+}
